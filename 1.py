@@ -6,8 +6,8 @@ for i in range(n):
 t=min(l)
 d=len(t)
 for i in range(1,d+1):
-    for j in l:
+   
         a=t[0:i]
-        if a==j[0:i]:
+        if all(a==j[0:i] for j in l):
             x=a
 print(x)
