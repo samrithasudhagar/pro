@@ -8,7 +8,7 @@ else:
     k=n//2
     for i in range(1,n):
         for j in range(1,n):
-            if (a*i)+(b*j)==k:
+            if (a*i)+(b*j)==k and i==j:
                 flag=0
                 break
             else:
