@@ -1,8 +1,10 @@
 n=int(input())
+k=[]
 for i in range(100):
     if n==2**i:
         print("0")
         break
-    elif n<2**i:
-        print(2**i-n)
-        break
+    else:
+        t=abs(2**i-n)
+        k.append(t)
+print(min(k))
