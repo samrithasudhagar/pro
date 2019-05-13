@@ -7,3 +7,4 @@ for i in range(n):
       if p*a[i]+q*a[j]+r*a[k]>c:
         c=p*a[i]+q*a[j]+r*a[k]
 print(c)
+#i
