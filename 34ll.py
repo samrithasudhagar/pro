@@ -1,14 +1,12 @@
-n=int(input())
-s=""
-a=[]
-for i in range(0,2**n):
-    s=""
-    pp=len(bin(i)[2:])
-    if pp<n:
-        s=s+"0"*(n-pp)+str(bin(i)[2:])
-    else:
-        s=s+str(bin(i)[2:])
-    a.append([s,s.count("1")])
-a.sort(key=lambda x:x[1])
-for i in range(len(a)):
-    print(a[i][0])
+n,k=map(int,input().split())
+l=[]
+c=0
+for i in range(n):
+    l.append(input())
+for i in range(n):
+    for j in range(k-1):
+        if l[i][j]=="R" and l[i][j+1]=="R":
+            c=c+5
+        elif l[i][j]=="G" and l[i][j+1]=="G":
+            c=c+3
+print(c)
