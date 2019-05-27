@@ -7,3 +7,4 @@ for i in range(0,len(a)-2):
       if i<j<k and a[i]>a[j]>a[k]:
         c = c+1
 print(c)
+#i
