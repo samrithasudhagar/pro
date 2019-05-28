@@ -4,3 +4,4 @@ b=list(map(int,input().split()))
 c=sum(b)
 d=sum(a)
 print((c+k)//d)
+#i
