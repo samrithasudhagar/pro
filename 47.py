@@ -8,7 +8,7 @@ else:
         for j in range(i+1,len(n)+1):
             for oo in range(k,100):
                 jj=n[i:j]+("0"*oo)
-                if int(jj)%int(n)==0:
+                if int(jj)%int(n)==0 and int(jj)!=0:
                     if int(jj)<m:
                         m=int(jj)
     print(m)
