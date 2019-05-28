@@ -6,5 +6,6 @@ for i in l:
     mm=mm+86400-i
     if mm<=t:
         c=c+1
+    if mm==t:
+        break
 print(c)
-        
